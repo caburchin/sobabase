@@ -1,0 +1,34 @@
+{
+  "name": "sobabase",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Yutaro Kijima<eddix.ibanez@outlook.jp>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "deploy": "gh-pages --add --dist ./dist --dest @micro-frontend/auth"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.0.5",
+    "next": "^13.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.26.0",
+    "generate-password": "^1.7.0",
+    "prettier": "^2.7.1",
+    "ts-loader": "^9.4.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
