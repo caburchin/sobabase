@@ -5,6 +5,18 @@ export default function Document() {
     <Html data-theme="dark">
       <Head>
         <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+        <meta
+          name="og:image"
+          content="https://sobabase-n7q9ptvoy-holywebdev.vercel.app/favicon.ico"
+        />
+        <meta name="og:title" content="Sobabase" />
+        <meta name="og:description" content="My Supabase Sandbox" />
+        <meta
+          name="twitter:card"
+          content="https://sobabase-n7q9ptvoy-holywebdev.vercel.app/favicon.ico"
+        />
+        <meta name="twitter:title" content="Sobabase" />
+        <meta name="twitter:description" content="My Supabase Sandbox" />
       </Head>
       <body className="container">
         <main>
