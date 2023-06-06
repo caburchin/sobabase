@@ -11,8 +11,8 @@ export default function Document() {
         />
         <meta name="og:title" content="Sobabase" />
         <meta name="og:description" content="My Supabase Sandbox" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:image" content="https://sobabase.vercel.app/favicon.ico" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://sobabase.vercel.app/image.jpg" />
         <meta name="twitter:title" content="Sobabase" />
         <meta name="twitter:description" content="My Supabase Sandbox" />
       </Head>
