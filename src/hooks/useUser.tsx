@@ -15,7 +15,7 @@ const _UserProvider = ({ children }: PropsWithChildren) => {
     data: { user },
   } = useSuspense(() => supabase.auth.getUser(), ref);
 
-  if (!user) {
+  if (!user && router.isReady) {
     router.replace('/');
     return null;
   }

@@ -4,7 +4,7 @@ const generator = require('generate-password');
 require('dotenv').config();
 
 const supabase = createClient(
-  process.env.SUPABASE_URL as string,
+  process.env.NEXT_PUBLIC_SUPABASE_URL as string,
   process.env.SUPABASE_ADMIN_KEY as string,
 );
 
