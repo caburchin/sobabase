@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
-    "deploy": "gh-pages --add --dist ./dist --dest @micro-frontend/auth"
+    "generate:user": "ts-node ./scripts/generate-user.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.0.5",

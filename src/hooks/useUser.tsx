@@ -20,8 +20,6 @@ const _UserProvider = ({ children }: PropsWithChildren) => {
     return null;
   }
 
-  console.log(user);
-
   return <Context.Provider value={user as User}>{children}</Context.Provider>;
 };
 
