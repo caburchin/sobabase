@@ -4,6 +4,16 @@ export default function Document() {
   return (
     <Html data-theme="dark">
       <Head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9G211QMFKT"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9G211QMFKT');`,
+          }}
+        ></script>
         <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="http://sobabase.vercel.app/image.jpg" />
