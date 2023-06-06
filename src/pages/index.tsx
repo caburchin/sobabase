@@ -1,9 +1,7 @@
-import { SignInPage } from 'src/components/pages/signin.component'
+import { SignInPage } from 'src/features/signin.component';
 
 const IndexPage = () => {
-  return (
-    <SignInPage />
-  )
-}
+  return <SignInPage />;
+};
 
 export default IndexPage;

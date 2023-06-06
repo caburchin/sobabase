@@ -1,13 +1,15 @@
-import Home from 'src/components/pages/home.component';
+import Head from 'next/head';
+import Home from 'src/features/home.component';
 import { UserProvider } from 'src/hooks/useUser';
 
 const HomePage = () => {
   return (
-    <main className="container">
-      <UserProvider>
-        <Home />
-      </UserProvider>
-    </main>
+    <UserProvider>
+      <Head>
+        <title>Sobabase | Home</title>
+      </Head>
+      <Home />
+    </UserProvider>
   );
 };
 

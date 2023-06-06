@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import React from 'react';
 import { useSignIn } from 'src/hooks/useSignIn';
 
 export const SignInPage = () => {
