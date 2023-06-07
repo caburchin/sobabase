@@ -1,9 +1,16 @@
-import { useUser } from 'src/hooks/useUser';
-import { useQuestionnaires } from 'src/resources/useQuestionaires';
+'use server';
+import { redirect } from 'next/navigation';
+import { getQuestionnaires } from 'src/resources/useQuestionaires';
+import { getUser } from 'src/resources/user';
 
-const Home = () => {
-  const user = useUser();
-  const profiles = useQuestionnaires(user?.id);
+export default async function Home() {
+  const user = await getUser();
+  const profiles = await getQuestionnaires(user?.id);
+
+  if (!user) {
+    redirect('/');
+  }
+
   return (
     <>
       <h1>Hello {user.user_metadata.name}</h1>
@@ -26,6 +33,4 @@ const Home = () => {
       </section>
     </>
   );
-};
-
-export default Home;
+}

@@ -1,8 +1,8 @@
+'use client';
 import { useForm } from 'react-hook-form';
-import Head from 'next/head';
 import { Questionnaire } from './types';
-import { useUser } from 'src/hooks/useUser';
 import { usePostQuestionnaire } from './usePostQuestionnaire';
+import { User } from '@supabase/supabase-js';
 
 const defaultValues: Questionnaire = {
   name: '',
@@ -12,12 +12,16 @@ const defaultValues: Questionnaire = {
   uid: '',
 };
 
-export const QuestionnaireForm = () => {
-  const user = useUser();
+type Props = {
+  user: User;
+};
+
+export const QuestionnaireForm = ({ user }: Props) => {
   const { register, handleSubmit } = useForm({
     defaultValues: { ...defaultValues, uid: user?.id },
   });
-  const { postQuestionnaire, isLoading, isSuccess, isError, error } = usePostQuestionnaire();
+  const { postQuestionnaire, isLoading, isSuccess, isError, error } =
+    usePostQuestionnaire();
   const onSubmit = (data: Questionnaire) => {
     postQuestionnaire(data);
   };

@@ -3,15 +3,15 @@
 :root {
   --background-color: #11191f;
   --color: #ffffff;
-  --h1-color: #00b478;
-  --h2-color: #00b478;
-  --h3-color: #00b478;
-  --h4-color: #00b478;
-  --h5-color: #00b478;
-  --h6-color: #00b478;
+  --h1-color: #00f064;
+  --h2-color: #00f064;
+  --h3-color: #00f064;
+  --h4-color: #00f064;
+  --h5-color: #00f064;
+  --h6-color: #00f064;
   --muted-color: hsl(205, 10%, 50%);
   --muted-border-color: #1f2d38;
-  --primary: var(--pico-primary);
+  --primary: #00c864;
   --primary-hover: var(--pico-primary-hover);
   --primary-focus: rgba(16, 149, 193, 0.25);
   --primary-inverse: #fff;
@@ -51,10 +51,10 @@
   --switch-color: var(--primary-inverse);
   --switch-checked-background-color: var(--primary);
   --pico-text-selection-color: rgba(0, 180, 120, 0.1875);
-  --pico-primary: #00b478;
+  --pico-primary: #00be00;
   --pico-primary-background: #007a50;
   --pico-primary-underline: rgba(0, 180, 120, 0.5);
-  --pico-primary-hover: #00cc88;
+  --pico-primary-hover: #00ce80;
   --pico-primary-hover-background: #00895a;
   --pico-primary-focus: rgba(0, 180, 120, 0.25);
   --pico-primary-inverse: #fff;
