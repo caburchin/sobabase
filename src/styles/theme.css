@@ -58,6 +58,8 @@
   --pico-primary-hover-background: #00895a;
   --pico-primary-focus: rgba(0, 180, 120, 0.25);
   --pico-primary-inverse: #fff;
+  --typography-spacing-vertical: 0rem;
+  --block-spacing-vertical: 1rem;
 }
 
 body {
@@ -77,4 +79,23 @@ body > footer {
 
 input[type='submit'] {
   margin-top: 1rem;
+}
+
+button[type='submit'] {
+  margin-top: 1rem;
+}
+
+p {
+  width: max-content;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
+
+.flex-end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }

@@ -5,9 +5,6 @@ export const SignInPage = () => {
   const props = useSignIn();
   return (
     <div className="container">
-      <Head>
-        <title>Sobabase | Sign In</title>
-      </Head>
       <h1>Sign In</h1>
       <label>
         Email

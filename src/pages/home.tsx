@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Home from 'src/features/home.component';
+import Home from 'src/features/home';
 import { UserProvider } from 'src/hooks/useUser';
 
 const HomePage = () => {

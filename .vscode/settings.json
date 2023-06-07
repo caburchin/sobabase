@@ -1,4 +1,5 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
-  "cSpell.words": ["signin", "sobabase", "supabase"]
+  "cSpell.words": ["signin", "sobabase", "supabase"],
+  "commentTranslate.source": "Google"
 }
