@@ -1,6 +1,6 @@
-import { useRouter } from 'next/router';
 import { ComponentProps, useState } from 'react';
 import { supabase } from '../supabase';
+import { useRouter } from 'next/navigation';
 
 export const useSignIn = () => {
   const [loading, setLoading] = useState(false);

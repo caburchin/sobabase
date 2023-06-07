@@ -1,5 +1,11 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
-  "cSpell.words": ["signin", "sobabase", "supabase"],
-  "commentTranslate.source": "Google"
+  "cSpell.words": [
+    "pico",
+    "signin",
+    "sobabase",
+    "supabase"
+  ],
+  "commentTranslate.source": "Google",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }

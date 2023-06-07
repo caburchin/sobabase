@@ -1,16 +1,14 @@
+'use server';
 import Head from 'next/head';
 import Home from 'src/features/home';
-import { UserProvider } from 'src/hooks/useUser';
 
-const HomePage = () => {
+export default async function HomePage() {
   return (
-    <UserProvider>
+    <>
       <Head>
         <title>Sobabase | Home</title>
       </Head>
       <Home />
-    </UserProvider>
+    </>
   );
-};
-
-export default HomePage;
+}

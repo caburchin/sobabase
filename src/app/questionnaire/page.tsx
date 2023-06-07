@@ -1,19 +1,25 @@
-import { QueryClientProvider } from '@tanstack/react-query';
+import { redirect } from 'next/navigation';
 import Head from 'next/head';
 import { QuestionnaireForm } from 'src/features/questonnaire';
-import { UserProvider } from 'src/hooks/useUser';
+import { getUser } from 'src/resources/user';
 
-const QuestionnairePage = () => {
+const QuestionnairePage = async () => {
+  const user = await getUser();
+
+  if (!user) {
+    redirect('/');
+  }
+
   return (
-    <UserProvider>
+    <>
       <Head>
         <title>Sobabase | Questionnaire</title>
       </Head>
       <div className="container">
         <h1>Questionnaire</h1>
-        <QuestionnaireForm />
+        <QuestionnaireForm user={user} />
       </div>
-    </UserProvider>
+    </>
   );
 };
 
