@@ -77,6 +77,19 @@ body > footer {
   justify-content: center;
 }
 
+@media (min-width: 768px) {
+  body > footer,
+  body > header,
+  body > main,
+  section {
+    --block-spacing-vertical: var(--spacing);
+  }
+}
+
+h2 {
+  --typography-spacing-vertical: 1rem;
+}
+
 input[type='submit'] {
   margin-top: 1rem;
 }
@@ -87,6 +100,10 @@ button[type='submit'] {
 
 p {
   width: max-content;
+}
+
+dd {
+  margin-inline-start: 1rem;
 }
 
 .center {

@@ -11,10 +11,16 @@ const Home = () => {
         <h2>Profile</h2>
         {profiles.map((prof) => (
           <article key={prof.id}>
-            <p>{prof.name}</p>
-            <p>{prof.birthDay}</p>
-            <p>{prof.job}</p>
-            <p>{prof.favoriteIn}</p>
+            <dl className="grid" style={{ gridTemplateColumns: 'auto 1fr' }}>
+              <dt>Name</dt>
+              <dd>{prof.name}</dd>
+              <dt>Birth day</dt>
+              <dd>{prof.birthDay}</dd>
+              <dt>Job</dt>
+              <dd>{prof.job}</dd>
+              <dt>Favorite</dt>
+              <dd>{prof.favoriteIn}</dd>
+            </dl>
           </article>
         ))}
       </section>
